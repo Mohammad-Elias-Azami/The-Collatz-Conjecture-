@@ -1,0 +1,15 @@
+#The Collatz Conjecture ( Code By: M.Elias Azami)
+print("Collatz Conjecture")
+print(" ")
+print("Starting point: ")
+print("(Must be an Integer)")
+origin = input()
+if not origin.isnumeric():
+    print("Please insert Integers only.")
+while 1 == 1:
+    if int(origin) % 2 == 0:
+        origin = int(origin) / 2
+        print(origin)
+    else:
+        origin = int(origin) * 3 + 1
+        print(origin)
